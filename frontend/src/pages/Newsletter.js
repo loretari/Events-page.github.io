@@ -1,7 +1,6 @@
 import NewsletterSignup from '../components/NewsletterSignup';
 import PageContent from '../components/PageContent';
-import {async} from "q";
-import {func} from "prop-types";
+
 
 function NewsletterPage() {
     return (
