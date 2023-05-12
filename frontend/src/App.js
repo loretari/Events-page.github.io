@@ -1,5 +1,5 @@
 
-import { RouterProvider, createBrowserRouter} from 'react-router-dom';
+import { Navigate, RouterProvider, createBrowserRouter} from 'react-router-dom';
 import HomePage from "./pages/Home";
 import EventsPage, { loader as eventsLoader} from "./pages/Events";
 import EventDetailPage, {loader as eventDetailLoader, action as deleteEventAction } from "./pages/EventDetail";
@@ -55,6 +55,7 @@ const router = createBrowserRouter([
             },
             {
                 path: 'logout',
+                element: <Navigate to = '/' />,
                 action : logoutAction,
             },
 
